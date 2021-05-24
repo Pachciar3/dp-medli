@@ -1,0 +1,13 @@
+@import "../../scss/variables.scss";
+
+.a-footerLink {
+  color: $secondaryTextColorOnDark;
+  font-family: $secondaryFont;
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration: none;
+  font-weight: 400;
+  &:hover {
+    text-decoration: underline;
+  }
+}

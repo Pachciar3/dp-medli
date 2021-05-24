@@ -2,23 +2,39 @@
 
 .a-heading {
   color: $primaryTextColor;
-  > * {
+  > h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     font-weight: 400;
   }
   &--big {
-    > * {
+    > h1,
+    h2,
+    h3,
+    h4,
+    h5 {
       font-size: 50px;
       line-height: 58.5px;
     }
   }
   &--small {
-    > * {
+    > h1,
+    h2,
+    h3,
+    h4,
+    h5 {
       font-size: 24px;
       line-height: 28px;
     }
   }
   &--huge {
-    > * {
+    > h1,
+    h2,
+    h3,
+    h4,
+    h5 {
       font-size: 80px;
       line-height: 93.6px;
     }
@@ -29,4 +45,13 @@
   &--primary {
     color: $primaryColor;
   }
+}
+
+.a-footerHeading {
+  font-family: $secondaryFont;
+  color: $primaryTextColorOnDark;
+  font-size: 18px;
+  line-height: 27px;
+  font-style: normal;
+  font-weight: normal;
 }

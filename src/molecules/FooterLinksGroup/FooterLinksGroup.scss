@@ -1,0 +1,10 @@
+.m-footerLinksGroup {
+  padding: 15.5px 0px;
+  &__title {
+    padding-bottom: 19px;
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+  }
+}

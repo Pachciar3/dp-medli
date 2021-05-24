@@ -92,6 +92,77 @@ const services = [
   }
 ];
 
+const footerLinks = [
+  {
+    id: 1, title: "Product", links: [
+      {
+        id: 1,
+        name: "Updates",
+        href: "ss"
+      },
+      {
+        id: 2,
+        name: "Security",
+        href: "ss"
+      },
+      {
+        id: 3,
+        name: "Chrome Extension",
+        href: "ss"
+      },
+    ]
+  },
+  {
+    id: 2, title: "Company", links: [
+      {
+        id: 1,
+        name: "About",
+        href: "ss"
+      },
+      {
+        id: 2,
+        name: "Blog",
+        href: "ss"
+      },
+      {
+        id: 3,
+        name: "Join us",
+        href: "ss"
+      },
+    ]
+  },
+  {
+    id: 2, title: "Help", links: [
+      {
+        id: 1,
+        name: "Talk to Support",
+        href: "ss"
+      },
+      {
+        id: 2,
+        name: "Support Docs",
+        href: "ss"
+      },
+      {
+        id: 3,
+        name: "API Docs",
+        href: "ss"
+      },
+      {
+        id: 3,
+        name: "System Status",
+        href: "ss"
+      },
+    ]
+  }
+];
+
+const footerNewsletter = {
+  placeholder: "Enter your email",
+  label: "Try Medli for free",
+  buttonText: "Get started"
+};
+
 function App() {
   return (
     <div className="App">
@@ -108,7 +179,7 @@ function App() {
         />
         <Tiles data={services} />
       </Section>
-      <Footer logoUrl={`${appUrl}/images/logo-white.png`}>
+      <Footer logoUrl={`${appUrl}/images/logo-white.png`} links={footerLinks} newsletter={footerNewsletter}>
       </Footer>
     </div>
   );

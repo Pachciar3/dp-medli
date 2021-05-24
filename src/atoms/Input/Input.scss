@@ -1,0 +1,17 @@
+@import "../../scss/variables.scss";
+
+.a-input {
+  border: 1px solid $primaryTextColorOnDark;
+  border-radius: $borderRadius;
+  color: #fff;
+  font-family: $secondaryFont;
+  padding: 16px 15px;
+  width: 100%;
+  background-color: transparent;
+  font-size: 20px;
+  line-height: 30px;
+  &::placeholder {
+    color: $primaryTextColorOnDark;
+    font-family: $secondaryFont;
+  }
+}
