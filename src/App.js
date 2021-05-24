@@ -108,7 +108,7 @@ function App() {
         />
         <Tiles data={services} />
       </Section>
-      <Footer>
+      <Footer logoUrl={`${appUrl}/images/logo-white.png`}>
       </Footer>
     </div>
   );

@@ -1,11 +1,12 @@
 import React from "react";
 
 import "./Footer.scss";
+import Logo from "../../atoms/Logo/Logo";
 
-function Footer() {
+function Footer({ logoUrl }) {
   return (
     <footer className="o-footer">
-      ok
+      <Logo url={logoUrl} />
     </footer>
   );
 }
