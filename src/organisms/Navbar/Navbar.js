@@ -13,7 +13,9 @@ function Navbar({ logoUrl, links }) {
         <div className="o-navbar__menu">
           <Menu links={links} />
         </div>
-        <HamburgerButton />
+        <div className="o-navbar__btn">
+          <HamburgerButton />
+        </div>
       </div>
     </div>
   );

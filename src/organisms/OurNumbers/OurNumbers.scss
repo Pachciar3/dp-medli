@@ -9,3 +9,21 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .o-ourNumbers {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    &__el {
+      width: 276px;
+      padding: 135px 0px 179px;
+      &:first-child {
+        padding-top: 135px;
+      }
+      &:last-child {
+        padding-bottom: 179px;
+      }
+    }
+  }
+}

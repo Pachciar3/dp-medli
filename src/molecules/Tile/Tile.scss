@@ -4,9 +4,14 @@
   background-color: #fff;
   border-radius: $borderRadius;
   padding: 42px 48px 45px 48px;
+  display: flex;
+  flex-direction: column;
   &__image {
-    margin-bottom: 68px;
     padding: 0px 2px;
+    flex-grow: 1;
+  }
+  &__head {
+    margin-top: 68px;
   }
   &__desc {
     padding-top: 16px;

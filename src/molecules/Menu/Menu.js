@@ -1,6 +1,7 @@
 import React from "react";
 
 import MenuLink from "../../atoms/MenuLink/MenuLink";
+import Button from "../../atoms/Buttons/Button";
 import './Menu.scss';
 
 function Menu({ links }) {
@@ -12,6 +13,7 @@ function Menu({ links }) {
       <ul className="m-menu__list">
         {renderLinks}
       </ul>
+      <Button small>Log in</Button>
     </nav>
   );
 }

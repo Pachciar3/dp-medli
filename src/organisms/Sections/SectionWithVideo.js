@@ -11,15 +11,16 @@ function SectionWithVideo({ sectionWithVideo }) {
         <SectionTextContent
           header={sectionWithVideo.header}
           description={sectionWithVideo.description}
+          center
         />
       </div>
       <div className="o-sectionWithVideo__video">
         <YoutubeVideo
-        src={sectionWithVideo.src}
-        alt={sectionWithVideo.alt}
-        videoUrl={sectionWithVideo.videoUrl}
+          src={sectionWithVideo.src}
+          alt={sectionWithVideo.alt}
+          videoUrl={sectionWithVideo.videoUrl}
         />
-      </div>  
+      </div>
     </section>
   );
 }

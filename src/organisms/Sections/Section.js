@@ -7,7 +7,9 @@ function Section({ children, colored }) {
   const className = classNames("o-section", { "o-section--colored": colored });
   return (
     <section className={className}>
-      {children}
+      <div className="o-section__con">
+        {children}
+      </div>
     </section>
   );
 }

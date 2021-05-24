@@ -11,3 +11,18 @@
     display: none;
   }
 }
+
+@media (min-width: 1440px) {
+  .o-navbar {
+    &__con {
+      width: 1146px;
+      margin: 0 auto;
+    }
+    &__menu {
+      display: block;
+    }
+    &__btn {
+      display: none;
+    }
+  }
+}

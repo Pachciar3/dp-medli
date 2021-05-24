@@ -16,6 +16,16 @@
   line-height: 30px;
   border-radius: $borderRadius;
   text-align: center;
+  transition: 0.2s linear;
+  &:hover {
+    background-color: $primaryTextColor;
+    color: $secondaryTextColorOnDark;
+    box-shadow: 0px 0px 0px 1px $secondaryTextColorOnDark;
+  }
+  &--small {
+    font-size: 20px;
+    line-height: 19px;
+  }
 }
 a.a-button {
   text-decoration: none;
@@ -27,7 +37,38 @@ a.a-button {
   width: 78px;
   background-color: $roundButtonColor;
   position: relative;
+  &:hover {
+    background-color: $roundButtonColor;
+  }
   span {
     @include centerAbsolute();
+  }
+}
+
+@media (min-width: 1440px) {
+  .a-button {
+    font-size: 25px;
+    line-height: 37.5px;
+    width: 255px;
+    &--smallOnDesktop {
+      font-size: 18px;
+      padding: 4px 16px;
+      width: 100%;
+      line-height: 27px;
+    }
+    &--small {
+      padding: 7px 10px;
+      font-size: 20px;
+      line-height: 36px;
+      width: 124px;
+    }
+  }
+  .a-buttonRoundWithIco {
+    height: 136px;
+    width: 136px;
+    // span {
+    //   // width: 58px;
+    //   // height: 58px;
+    // }
   }
 }

@@ -1,0 +1,15 @@
+@import "../../scss/variables.scss";
+
+.a-footerTerms {
+  display: block;
+  color: $secondaryTextColorOnDark;
+  font-family: $secondaryFont;
+  font-size: 10px;
+  line-height: 15px;
+  text-decoration: none;
+  font-weight: 400;
+  margin: 16px 0px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
