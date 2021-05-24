@@ -12,11 +12,19 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 440px) {
   .o-navbar {
     &__con {
-      width: 1146px;
+      max-width: 1146px;
       margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .o-navbar {
+    &__con {
+      max-width: 1146px;
     }
     &__menu {
       display: block;

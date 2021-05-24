@@ -8,15 +8,23 @@
   }
 }
 
+@media (min-width: 768px) {
+  .m-sectionTextContent {
+    &--center {
+      text-align: center;
+    }
+    &--center &__desc {
+      width: 371px;
+      margin: 0 auto;
+    }
+  }
+}
+
 @media (min-width: 1440px) {
   .m-sectionTextContent {
     padding: 24px 0px 10px;
     &__head {
       padding-bottom: 16px;
-    }
-    &--center &__desc {
-      width: 371px;
-      margin: 0 auto;
     }
     &--center &__head {
       padding-bottom: 40px;

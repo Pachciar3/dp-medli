@@ -45,6 +45,23 @@ a.a-button {
   }
 }
 
+@media (min-width: 768px) {
+  .a-button {
+    &--smallOnDesktop {
+      font-size: 18px;
+      padding: 4px 16px;
+      width: 100%;
+      line-height: 27px;
+    }
+    &--small {
+      padding: 7px 10px;
+      font-size: 20px;
+      line-height: 36px;
+      width: 124px;
+    }
+  }
+}
+
 @media (min-width: 1440px) {
   .a-button {
     font-size: 25px;

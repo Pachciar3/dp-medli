@@ -10,13 +10,27 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .o-ourNumbers {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     &__el {
       width: 276px;
+      padding: 80px 0px 100px;
+      &:first-child {
+        padding-top: 80px;
+      }
+      &:last-child {
+        padding-bottom: 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .o-ourNumbers {
+    &__el {
       padding: 135px 0px 179px;
       &:first-child {
         padding-top: 135px;
