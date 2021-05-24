@@ -5,7 +5,10 @@ import Number from "../../molecules/Number/Number";
 
 function OurNumbers({ ourNumbers }) {
   const numbers = ourNumbers.map(({ number, text, id }) => (
-    <div className="o-ourNumbers__el" key={id}><Number header={number} description={text} /></div>)
+    <div className="o-ourNumbers__el"
+      key={`numberEl-${id}`}>
+      <Number header={number} description={text} />
+    </div>)
   );
   return (
     <div className="o-ourNumbers">

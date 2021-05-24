@@ -9,7 +9,7 @@ function Menu({ links }) {
   const renderLinks = links.map(link => {
     if (link.active) {
       return (
-        <MenuLink key={link.id} active>{link.text}</MenuLink>);
+        <MenuLink key={`menuItem-${link.id}`} active>{link.text}</MenuLink>);
     }
     return (
       <MenuLink key={link.id}>{link.text}</MenuLink>);

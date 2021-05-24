@@ -5,7 +5,7 @@ import Tile from "../../molecules/Tile/Tile";
 
 function Wrapper({ data }) {
   const tiles = data.map(({ title, desc, id, image }) => (
-    <Tile key={id} header={title} description={desc} imageUrl={image} imageAlt={title} />)
+    <Tile key={`tile-${id}`} header={title} description={desc} imageUrl={image} imageAlt={title} />)
   );
   return (
     <div className="o-tiles">
