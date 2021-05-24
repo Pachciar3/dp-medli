@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/dp-medli/static/css/main.ded4a3b2.chunk.css",
+    "main.js": "/dp-medli/static/js/main.a951415d.chunk.js",
+    "main.js.map": "/dp-medli/static/js/main.a951415d.chunk.js.map",
+    "runtime-main.js": "/dp-medli/static/js/runtime-main.5b28fc51.js",
+    "runtime-main.js.map": "/dp-medli/static/js/runtime-main.5b28fc51.js.map",
+    "static/js/2.c71be300.chunk.js": "/dp-medli/static/js/2.c71be300.chunk.js",
+    "static/js/2.c71be300.chunk.js.map": "/dp-medli/static/js/2.c71be300.chunk.js.map",
+    "static/js/3.78e9726c.chunk.js": "/dp-medli/static/js/3.78e9726c.chunk.js",
+    "static/js/3.78e9726c.chunk.js.map": "/dp-medli/static/js/3.78e9726c.chunk.js.map",
+    "index.html": "/dp-medli/index.html",
+    "static/css/main.ded4a3b2.chunk.css.map": "/dp-medli/static/css/main.ded4a3b2.chunk.css.map",
+    "static/js/2.c71be300.chunk.js.LICENSE.txt": "/dp-medli/static/js/2.c71be300.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5b28fc51.js",
+    "static/js/2.c71be300.chunk.js",
+    "static/css/main.ded4a3b2.chunk.css",
+    "static/js/main.a951415d.chunk.js"
+  ]
+}
