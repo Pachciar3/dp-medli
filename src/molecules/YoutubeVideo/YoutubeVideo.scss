@@ -1,0 +1,9 @@
+@import "../../scss/mixins.scss";
+
+.m-youtubeVideo {
+  position: relative;
+  &__btn {
+    @include centerAbsolute();
+    z-index: 20;
+  }
+}

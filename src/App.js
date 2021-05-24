@@ -4,7 +4,8 @@ import './App.scss';
 import Navbar from "./organisms/Navbar/Navbar";
 import Header from "./organisms/Header/Header";
 import OurNumbers from "./organisms/OurNumbers/OurNumbers";
-import Section from "./organisms/Section/Section";
+import Section from "./organisms/Sections/Section";
+import SectionWithVideo from "./organisms/Sections/SectionWithVideo";
 
 const appUrl = process.env.REACT_APP_URL;
 
@@ -61,6 +62,12 @@ const ourNumbers = [
   }
 ];
 
+const sectionWithVideo = {
+  header: "What our community is saying?",
+  description: "A mission-driven company that invest in and builds healthier living",
+  src: `${appUrl}/images/video-image.png`,
+};
+
 function App() {
   return (
     <div className="App">
@@ -69,7 +76,7 @@ function App() {
       <Section>
         <OurNumbers ourNumbers={ourNumbers} />
       </Section>
-      <Section colored>xDDD</Section>
+      <SectionWithVideo sectionWithVideo={sectionWithVideo}>xDDD</SectionWithVideo>
       <Section></Section>
     </div>
   );

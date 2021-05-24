@@ -1,4 +1,5 @@
 @import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
 
 .a-button {
   display: block;
@@ -19,4 +20,14 @@
 a.a-button {
   text-decoration: none;
   text-align: center;
+}
+.a-buttonRoundWithIco {
+  border-radius: 50%;
+  height: 78px;
+  width: 78px;
+  background-color: $roundButtonColor;
+  position: relative;
+  span {
+    @include centerAbsolute();
+  }
 }
