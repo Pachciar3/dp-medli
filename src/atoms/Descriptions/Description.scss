@@ -1,0 +1,20 @@
+@import "../../scss/variables.scss";
+
+.a-description {
+  color: $primaryTextColor;
+  font-family: $secondaryFont;
+  > * {
+    font-weight: 400;
+  }
+  &--big {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  &--small {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  &--center {
+    text-align: center;
+  }
+}

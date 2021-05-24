@@ -1,0 +1,17 @@
+@import "../../scss/variables.scss";
+
+.o-section {
+  padding: 24px;
+  position: relative;
+  &--colored::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $primaryColor;
+    height: 497px;
+    z-index: -1;
+  }
+}

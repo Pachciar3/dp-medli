@@ -1,0 +1,22 @@
+@import "../../scss/variables.scss";
+
+.a-button {
+  display: block;
+  border: 0px;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  background-color: $primaryColor;
+  color: $primaryTextColor;
+  font-family: $secondaryFont;
+  padding: 16px 10px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: $borderRadius;
+  text-align: center;
+}
+a.a-button {
+  text-decoration: none;
+  text-align: center;
+}

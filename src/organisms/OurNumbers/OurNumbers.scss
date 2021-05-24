@@ -1,0 +1,11 @@
+.o-ourNumbers {
+  &__el {
+    padding: 54px 0px;
+    &:first-child {
+      padding-top: 6px;
+    }
+    &:last-child {
+      padding-bottom: 44px;
+    }
+  }
+}

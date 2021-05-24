@@ -1,0 +1,13 @@
+@import "../../scss/variables.scss";
+
+.o-navbar {
+  &__con {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 35px 24px;
+  }
+  &__menu {
+    display: none;
+  }
+}

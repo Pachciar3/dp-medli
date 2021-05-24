@@ -1,0 +1,27 @@
+@import "../../scss/variables.scss";
+
+.a-hamburger {
+  border: 0px;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  span {
+    width: 30px;
+    height: 3px;
+    background-color: $primaryTextColor;
+    border-radius: 90px;
+  }
+  & span:nth-child(1) {
+    margin-top: 0px;
+  }
+  & span:nth-child(2) {
+    margin-top: 4px;
+  }
+  & span:nth-child(3) {
+    margin-top: 4px;
+  }
+}
