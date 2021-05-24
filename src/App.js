@@ -6,6 +6,9 @@ import Header from "./organisms/Header/Header";
 import OurNumbers from "./organisms/OurNumbers/OurNumbers";
 import Section from "./organisms/Sections/Section";
 import SectionWithVideo from "./organisms/Sections/SectionWithVideo";
+import Tiles from "./organisms/Tiles/Tiles";
+import Footer from "./organisms/Footer/Footer";
+import SectionTextContent from "./molecules/SectionTextContent/SectionTextContent";
 
 const appUrl = process.env.REACT_APP_URL;
 
@@ -68,6 +71,27 @@ const sectionWithVideo = {
   src: `${appUrl}/images/video-image.png`,
 };
 
+const services = [
+  {
+    id: 1,
+    image: `${appUrl}/images/service-1.png`,
+    title: "1 FREE chat session",
+    desc: "Start with a free text based chat session online"
+  },
+  {
+    id: 2,
+    image: `${appUrl}/images/service-2.png`,
+    title: "Personal Coach",
+    desc: "A dedicated coach to help you through your journey"
+  },
+  {
+    id: 3,
+    image: `${appUrl}/images/service-3.png`,
+    title: "Text chat session",
+    desc: "An excellent way of preaparing a projects wireframe"
+  }
+];
+
 function App() {
   return (
     <div className="App">
@@ -77,7 +101,15 @@ function App() {
         <OurNumbers ourNumbers={ourNumbers} />
       </Section>
       <SectionWithVideo sectionWithVideo={sectionWithVideo}>xDDD</SectionWithVideo>
-      <Section></Section>
+      <Section>
+        <SectionTextContent
+          header="What you’re getting?"
+          description="We bring you personalized development programs that are backed by research and crafted from the years of experience"
+        />
+        <Tiles data={services} />
+      </Section>
+      <Footer>
+      </Footer>
     </div>
   );
 }

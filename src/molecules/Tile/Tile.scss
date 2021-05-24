@@ -1,0 +1,14 @@
+@import "../../scss/variables.scss";
+
+.m-tile {
+  background-color: #fff;
+  border-radius: $borderRadius;
+  padding: 42px 48px 45px 48px;
+  &__image {
+    margin-bottom: 68px;
+    padding: 0px 2px;
+  }
+  &__desc {
+    padding-top: 16px;
+  }
+}
