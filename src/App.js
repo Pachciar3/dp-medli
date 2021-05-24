@@ -15,23 +15,28 @@ const appUrl = process.env.REACT_APP_URL;
 const links = [
   {
     id: "1",
-    text: "Home"
+    text: "Home",
+    active: true
   },
   {
     id: "2",
-    text: "About"
+    text: "About",
+    active: false
   },
   {
     id: "3",
-    text: "Courses"
+    text: "Courses",
+    active: false,
   },
   {
     id: "4",
-    text: "News"
+    text: "News",
+    active: false
   },
   {
     id: "5",
-    text: "Contact"
+    text: "Contact",
+    active: false
   }
 ];
 
@@ -41,7 +46,11 @@ const image = {
 };
 
 const textContent = {
-  head: `Check your well-being`,
+  head: {
+    before: "Check y",
+    middle: "o",
+    after: "ur well-being"
+  },
   desc: "We’re sure that deciding to check on your health is a big step, even if it doesn’t bother in any way. ",
   linkText: "Get started",
   linkUrl: "/"

@@ -6,4 +6,18 @@
     @include centerAbsolute();
     z-index: 20;
   }
+  &__ico {
+    @include centerAbsolute();
+    width: 34.8px;
+    height: 34.8px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .m-youtubeVideo {
+    &__ico {
+      width: 58px;
+      height: 58px;
+    }
+  }
 }

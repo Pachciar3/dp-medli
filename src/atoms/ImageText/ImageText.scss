@@ -1,0 +1,21 @@
+.imageText {
+  position: relative;
+  span {
+    opacity: 0;
+    display: none;
+  }
+  svg {
+    display: inline-block;
+    width: 27px;
+    margin-bottom: -5px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .imageText {
+    svg {
+      margin-bottom: 0px;
+      width: 43px;
+    }
+  }
+}

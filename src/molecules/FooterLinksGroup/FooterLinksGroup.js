@@ -6,7 +6,7 @@ import './FooterLinksGroup.scss';
 
 function FooterLinksGroup({ title, links }) {
   const renderLinks = links.map(({ href, id, name }) => <FooterLink
-    href={href} key={`${id}-linkGroup`}>{name}</FooterLink>);
+    href={href} key={`${id}-linkGroup-${name}`}>{name}</FooterLink>);
 
   return (
     <div className="m-footerLinksGroup">

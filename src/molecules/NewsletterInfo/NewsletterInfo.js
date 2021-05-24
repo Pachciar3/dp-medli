@@ -9,7 +9,7 @@ function NewsletterInfo({ label, placeholder, buttonText }) {
 
   return (
     <form className="m-newsletterInfo">
-      <FooterHeading><label for="newsletter-input">{label}</label></FooterHeading>
+      <FooterHeading><label htmlFor="newsletter-input">{label}</label></FooterHeading>
       <fieldset className="m-newsletterInfo__field">
         <div className="m-newsletterInfo__input">
           <Input placeholder={placeholder} id="newsletter-input" name="newsletter-input" />

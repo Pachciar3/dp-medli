@@ -20,8 +20,11 @@
     opacity: 0;
     transition: 0.2s linear;
   }
-  &:hover::before {
+  &.a-menuLink--active::before {
     opacity: 1;
+  }
+  &:hover {
+    color: $primaryColor;
   }
   transition: 0.2s linear;
 }

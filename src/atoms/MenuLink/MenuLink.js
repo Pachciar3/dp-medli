@@ -1,10 +1,15 @@
 import React from "react";
+import classNames from "classnames";
 
 import './MenuLink.scss';
 
-function MenuLink({ to = "#", children }) {
+function MenuLink({ to = "#", children, active = false }) {
+  const className = classNames("a-menuLink", {
+    "a-menuLink--active": active
+  });
+
   return (
-    <a href={to} className="a-menuLink">
+    <a href={to} className={className}>
       {children}
     </a>
   );

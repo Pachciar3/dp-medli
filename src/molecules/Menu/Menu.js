@@ -6,7 +6,14 @@ import './Menu.scss';
 
 function Menu({ links }) {
 
-  const renderLinks = links.map(link => <MenuLink key={link.id}>{link.text}</MenuLink>);
+  const renderLinks = links.map(link => {
+    if (link.active) {
+      return (
+        <MenuLink key={link.id} active>{link.text}</MenuLink>);
+    }
+    return (
+      <MenuLink key={link.id}>{link.text}</MenuLink>);
+  });
 
   return (
     <nav className="m-menu">
